@@ -1,0 +1,60 @@
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background:linear-gradient(90deg,#a3b18a,#344e41 ) ; /* رنگ پس‌زمینه کلی */  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    height: 100vh;  
+}  
+
+.container {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    backdrop-filter: blur(10px);  
+    border-radius: 15px;  
+    padding: 20px;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
+}  
+
+.form__box {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 15px;  
+}  
+
+.form__select {  
+    width: 20rem; /* عرض سلکت باکس به 10rem تنظیم شده */  
+    padding: 15px;   
+    border: 2px solid transparent;  
+    border-radius: 5px;  
+    background: #dad7cd;  
+    font-size: 16px;   
+    transition: border 0.3s ease;  
+    cursor: pointer;  
+}  
+
+.form__select:focus {  
+    border: 2px solid #e4ffe4; /* رنگ حاشیه در حالت فعال */  
+    outline: none;  
+}  
+
+.form__select option {  
+    padding: 10px;  
+    background-color: #a3b18a; /* رنگ پس‌زمینه گزینه‌ها */  
+    color: #070a07; /* رنگ متن گزینه‌ها */  
+}  
+
+.form__select option:hover {  
+    background-color: #588157; /* رنگ پس‌زمینه گزینه‌ها هنگام هاور */  
+    color: #ffffff; /* رنگ متن گزینه‌ها هنگام هاور */  
+}
+option[disabled] {
+    display: none;
+}
